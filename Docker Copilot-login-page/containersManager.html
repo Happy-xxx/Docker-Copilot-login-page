@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Docker Copilot</title>    
+        <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="content-cn">
+            <div class="leftt">
+                <div class="side-nav">
+                    <div class="top-item top-item-first"> <span class="top-text">启动</span> </div>
+                    <div class="top-item"> <span class="top-text">停止</span> </div>
+                    <div class="top-item"> <span class="top-text">更新</span> </div>
+                    <div class="top-item"> <span class="top-text">重命名</span> </div>
+                    <div class="top-item"> <span class="top-text">更换镜像</span> </div>
+                </div>
+                <div class="side-nav">
+                    <div class="top-item top-item-first"> <span class="top-text">状态</span> </div>
+                    <div class="top-item"> <span class="top-text">容器名称</span> </div>
+                    <div class="top-item"> <span class="top-text">使用镜像</span> </div>
+                    <div class="top-item"> <span class="top-text">创建时间</span> </div>
+                    <div class="top-item"> <span class="top-text">运行时间</span> </div>
+                </div>
+            </div>
+            <div class="bottom-cn">
+                <div class="bt-left">
+                    <div class="nav-item nav-item-first"> <span class="top-text">容器</span> </div>
+                    <div class="nav-item"> <span class="top-text">镜像</span> </div>
+                </div>                
+            </div>
+        </div>
+    </body>
+<script>
+     document.querySelector(".people").addEventListener('animationend', function () {
+            this.classList.remove('p-animtion');
+            this.classList.add('p-other-animtion')
+        });
+        document.querySelector(".sphere").addEventListener('animationend', function () {
+            this.classList.remove('s-animtion');
+            this.classList.add('s-other-animtion')
+        });	
+ </script>
+    
+</html>    

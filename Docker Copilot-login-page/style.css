@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Aguazyuan", Courier, monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #abc6f8;
+  background-image: radial-gradient(closest-side, rgb(255, 255, 255), rgba(235, 105, 78, 0)), radial-gradient(closest-side, rgb(250, 203, 203), rgba(243, 11, 164, 0)), radial-gradient(closest-side, rgb(237, 252, 202), rgba(254, 234, 131, 0)), radial-gradient(closest-side, rgb(197, 248, 241), rgba(170, 142, 245, 0)), radial-gradient(closest-side, rgb(206, 200, 243), rgba(248, 192, 147, 0));
+  background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax, 110vmax 110vmax, 90vmax 90vmax;
+  background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax, -30vmax -10vmax, 50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 10s movement linear infinite;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-color: #abc6f8;
+  position: relative;
+  background-image: radial-gradient(closest-side, rgb(255, 255, 255), rgba(235, 105, 78, 0)), radial-gradient(closest-side, rgb(250, 203, 203), rgba(243, 11, 164, 0)), radial-gradient(closest-side, rgb(237, 252, 202), rgba(254, 234, 131, 0)), radial-gradient(closest-side, rgb(197, 248, 241), rgba(170, 142, 245, 0)), radial-gradient(closest-side, rgb(206, 200, 243), rgba(248, 192, 147, 0));
+  background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax, 110vmax 110vmax, 90vmax 90vmax;
+  background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax, -30vmax -10vmax, 50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: 10s movement linear infinite;
+}
+.content .login-wrapper {
+  width: 70vw;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.content .login-wrapper .left-img {
+  border-radius: 40px;
+  flex: 1;
+  background: url(./asset/background.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.content .login-wrapper .left-img .glass {
+  width: 60%;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+}
+.content .login-wrapper .left-img .glass .tips .title {
+  width: 25%;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+}
+.content .login-wrapper .left-img .glass .tips h1 {
+  margin: 15px 0;
+}
+.content .login-wrapper .left-img .glass .tips span {
+  margin: 5px 0;
+  display: block;
+  font-weight: 100;
+}
+.content .login-wrapper .right-login-form {
+  flex: 1;
+  position: relative;
+}
+
+.content .login-wrapper .right-login-form .form-logo{
+  position: absolute;
+  right: 29%;
+  top: 5%;
+  width: 45%;
+  z-index: 3;
+}
+
+.content .login-wrapper .right-login-form .form-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.content .login-wrapper .right-login-form .form-wrapper h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.content .login-wrapper .right-login-form .form-wrapper .input-items {
+  margin: 20px 0;
+}
+.content .login-wrapper .right-login-form .form-wrapper .input-items .input-tips {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.content .login-wrapper .right-login-form .form-wrapper .input-items .inputs {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.5s;
+}
+.content .login-wrapper .right-login-form .form-wrapper .input-items .inputs:focus {
+  border: 1px solid rgb(128, 106, 196);
+}
+.content .login-wrapper .right-login-form .form-wrapper .input-items .forgot {
+  float: right;
+  font-weight: 600;
+  text-align: right;
+  margin: 5px 0;
+  font-size: 13px;
+  cursor: pointer;
+}
+.content .login-wrapper .right-login-form .form-wrapper .btn {
+  width: 80%;
+  padding: 4% 0;
+  height: 50px;
+  background-color: rgb(19, 13, 44);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  min-width: 120px;
+  min-height: 36px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .login-wrapper .right-login-form .form-wrapper .siginup-tips {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.content .login-wrapper .right-login-form .form-wrapper .siginup-tips span:last-child {
+  color: rgb(110, 87, 179);
+  cursor: pointer;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .divider {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .divider .line {
+  display: inline-block;
+  max-width: 35%;
+  width: 35%;
+  flex: 1;
+  height: 1px;
+  background-color: rgb(162, 172, 185);
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .divider .divider-text {
+  vertical-align: middle;
+  margin: 0 20px;
+  display: inline-block;
+  width: 50px;
+  color: rgb(162, 172, 185);
+  white-space: normal;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item {
+  width: 70px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(51, 49, 116);
+  margin: 0 10px;
+  transition: 0.4s;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item span {
+  vertical-align: middle;
+}
+.content .login-wrapper .right-login-form .form-wrapper .other-login .other-login-wrapper .other-login-item:hover {
+  width: 80px;
+  height: 50%;
+  background-color: #fff;
+  border: 0;
+  box-shadow: 1px 10px 32px 1px rgba(186, 175, 221, 0.37);
+}
+
+.content-cn{
+  width: 90%;
+  height: 90vh;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.left{
+  flex: 0 0 auto;
+  height: 50px;
+}
+.bottom-cn{
+  flex: 1 1 auto;
+  display: flex;
+}
+.bt-left{
+  display: flex;
+  width: 150px; 
+  height: 30%;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+.bt-right{
+  flex: 1 1 auto;
+}
+.side-nav{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.top-item-first{
+  margin-left: 150px;
+}
+.top-item{
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 10px;
+  color: rgb(51, 52, 124);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Century Gothic", Times, serif;
+  transition: 0.5s;
+}
+.top-item:hover{
+  background-color: #fff;
+}
+.nav-item{
+  width: 80%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  color: rgb(51, 52, 124);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Century Gothic", Times, serif;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+.nav-item:hover{
+  background-color: #fff;
+}
+.nav-item-first{
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .login-wrapper {
+    padding: 20px;
+  }
+  .login-wrapper .left-img {
+    display: none;
+  }
+  .login-wrapper .right-login-form {
+    padding: 20px;
+  }
+
+@media (max-width: 768px) {
+    /* 在小屏幕设备上应用的样式 */
+    .input-tips {
+      font-size: 14px;
+    }
+    .btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* 在中等屏幕设备上应用的样式 */
+    .input-tips {
+      font-size: 16px;
+    }
+    .btn {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+  }
+ 
+  @media (max-width: 600px) {
+    .btn {
+      font-size: 1rem;
+      padding: 4% 0;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .btn {
+      font-size: 1.2rem;
+      padding: 12px 0; 
+    }
+  }
+
+}/*# sourceMappingURL=style.css.map */
